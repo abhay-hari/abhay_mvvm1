@@ -7,13 +7,13 @@ class JsonPlaceHolderView extends JsonPlaceHolderViewModel {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: isLoading ? CircularProgressIndicator(
+        title: isLoading ? const CircularProgressIndicator(
             valueColor: AlwaysStoppedAnimation<Color>(Colors.white))
-            : Text("Jsonplaceholder"),
+            : const Text("Jsonplaceholder22222"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () =>  getPost(),
-        child: const Icon(Icons.favorite),
+        child: const Icon(Icons.favorite_border),
       ),
       body: ListView.builder(
           itemCount: postModel.length,
