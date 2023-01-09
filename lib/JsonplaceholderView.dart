@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'postmodel.dart';
+import 'postmodel2.dart';
 import 'jsonpage.dart';
 
 abstract class JsonPlaceHolderViewModel extends State<JsonPlaceHolder> {
@@ -27,7 +27,7 @@ abstract class JsonPlaceHolderViewModel extends State<JsonPlaceHolder> {
       default:
         showDialog(
             context: context,
-            builder: (context) => Dialog(child: Text("There's no data")));
+            builder: (context) => Dialog(child: Text("There's no data...!")));
     }
     changeLoading();
   }
